@@ -31,11 +31,25 @@ body{
     }
     .cards{
         flex-direction:column;
+        flex:1;
+    }
+    .cards a{
+        position:absolute;
+        bottom:0.5rem;
+        right:0.5rem;
     }
   }
 @media only screen and (min-width: 1200px) {
     .logo {
       right:30vh
+    }
+    .cards a{
+        position:absolute;
+        bottom:0.5rem;
+        right:0.5rem;
+    }
+    .cards{
+        flex:1;
     }
   }
 .logo span{
@@ -63,9 +77,16 @@ body{
     border-radius:10px;
     margin:1vh;
     flex:1;
+    position:relative;
 }
 .main{
     display:flex;
     flex-direction:column;
     align-items:center;
+}
+.card a{
+    color:black;
+    background-color:pink;
+    border-radius:10px;
+    font-weight:600;
 }
